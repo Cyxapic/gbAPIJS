@@ -21,6 +21,7 @@ INSTALLED_APPS = [
     'django_secrecy',
     'corsheaders',
     'rest_framework',
+    'django_cleanup.apps.CleanupConfig',
     'products',
 ]
 

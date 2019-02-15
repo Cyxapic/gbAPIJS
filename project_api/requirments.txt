@@ -1,0 +1,5 @@
+Django==2.1.7
+django-cleanup==3.1.0
+django-secrecy==0.99.5
+djangorestframework==3.9.1
+Pillow==5.4.1
