@@ -1,0 +1,12 @@
+__pycache__/
+.vscode/
+venv_apijs/
+/static/
+media/
+db.sqlite3
+*~
+*.pyc
+*.log
+secrets.json
+development.py
+
