@@ -8,7 +8,7 @@ from shop.urls import shop_router
 from products.urls import products_router
 
 
-router = routers.DefaultRouter()
+router = routers.SimpleRouter()
 router.registry.extend(shop_router.registry)
 router.registry.extend(products_router.registry)
 
