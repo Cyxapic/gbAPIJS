@@ -4,12 +4,14 @@ from django.conf import settings
 
 from rest_framework import routers
 
-from products import views
+from shop.urls import shop_router
+from products.urls import products_router
 
 
 router = routers.DefaultRouter()
-router.register(r'categories', views.CategoryViewSet)
-router.register(r'products', views.ProductViewSet)
+router.registry.extend(shop_router.registry)
+router.registry.extend(products_router.registry)
+
 
 urlpatterns = [
     path('api/v1/', include(router.urls)),

@@ -22,6 +22,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'django_cleanup.apps.CleanupConfig',
+    'shop',
     'products',
 ]
 
