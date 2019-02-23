@@ -12,4 +12,4 @@ class AboutShopSerializer(serializers.ModelSerializer):
 class PaymentMethodSerializer(serializers.ModelSerializer):
     class Meta:
         model = PaymentMethod
-        fields = ('method', )
+        fields = ('id', 'method', )
