@@ -6,7 +6,7 @@ from .models import AboutShop, PaymentMethod
 class AboutShopSerializer(serializers.ModelSerializer):
     class Meta:
         model = AboutShop
-        fields = ('description', )
+        fields = ('title', 'description', )
 
 
 class PaymentMethodSerializer(serializers.ModelSerializer):
