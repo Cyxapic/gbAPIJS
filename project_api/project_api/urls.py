@@ -16,6 +16,8 @@ router.registry.extend(products_router.registry)
 urlpatterns = [
     path('api/v1/', include(router.urls)),
     path('admin/', admin.site.urls),
+    path('auth/', include('rest_auth.urls')),
+    path('auth/registration/', include('rest_auth.registration.urls')),
 ]
 
 if settings.DEBUG:

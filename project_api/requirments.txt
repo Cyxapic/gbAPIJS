@@ -4,3 +4,4 @@ django-secrecy==0.99.5
 djangorestframework==3.9.1
 django-cors-headers==2.4.0
 Pillow==5.4.1
+django-rest-auth[with_social]
