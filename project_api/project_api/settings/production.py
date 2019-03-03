@@ -1,4 +1,4 @@
-from .base import secrets
+from .base import secrets, REST_FRAMEWORK
 
 
 DEBUG = False
@@ -21,7 +21,6 @@ DATABASES = {
     }
 }
 
-#REST_FRAMEWORK = {
-#    'DEFAULT_RENDERER_CLASSES': ('rest_framework.renderers.JSONRenderer', )
-#}
-
+REST_FRAMEWORK.update({
+   'DEFAULT_RENDERER_CLASSES': ('rest_framework.renderers.JSONRenderer', )
+})

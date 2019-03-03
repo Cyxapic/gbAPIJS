@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'django_cleanup.apps.CleanupConfig',
     'shop',
     'products',
+    'orders',
 ]
 
 MIDDLEWARE = [
@@ -104,8 +105,5 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.TokenAuthentication',
-    ),
-    'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.IsAuthenticated',
     ),
 }

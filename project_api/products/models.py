@@ -17,6 +17,7 @@ class Product(models.Model):
     title = models.CharField(max_length=50)
     price = models.PositiveIntegerField()
     img = models.ImageField(upload_to='products')
+    is_active = models.BooleanField(default=True)
 
     class Meta:
         verbose_name = 'Товар'
