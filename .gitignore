@@ -1,7 +1,7 @@
 __pycache__/
 .vscode/
 venv_apijs/
-/static/
+static/
 media/
 db.sqlite3
 *~
