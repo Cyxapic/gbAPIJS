@@ -20,8 +20,3 @@ class OrderCreateSerializer(serializers.ModelSerializer):
     class Meta:
         model = OrderItem
         fields = '__all__'
-
-    # def create(self, validated_data):
-    #     print(validated_data)
-    #     # order = Order.object.create(user=self.request.user)
-        # OrderItem.object.create_many()
